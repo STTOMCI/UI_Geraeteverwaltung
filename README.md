@@ -29,7 +29,7 @@ Das Endgültige Programm soll folgende Umstände berücksichtigen:
 
 &emsp;n/a
 
-*(für genauere Informationen siehe* requirements.txt *)*
+*(für genauere Informationen siehe* [requirements.txt](requirements.txt) *)*
 
 #### Betriebssysteme
 
