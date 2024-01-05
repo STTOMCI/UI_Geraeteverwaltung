@@ -95,15 +95,15 @@ Contributors names and contact info
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## License
+## Lizenz
 
-This project is licensed under the Educational Community License, Version 2.0 - see the [LICENSE.md](LICENSE.md) file for details
+Dieses Projekt ist lizenziert unter der "Educational Community License, Version 2.0" - siehe [LICENSE.md](LICENSE.md) für mehr Deteils
 
 [![Educational Community License, Version 2.0][ECL_V2]][ECL_V2-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Acknowledgments
+## Referenzen
 
 Inspiration, code snippets, etc.
 * [A simple README.md template](https://gist.github.com/DomPizzie/7a5ff55ffa9081f2de27c315f5018afc)
