@@ -91,13 +91,13 @@ Contributors names and contact info
 
 * 0.1
     * Setup
-    * See [commit change]() or See [release history]()
+    * Siehe [Commits](https://github.com/STTOMCI/UI_Geraeteverwaltung/commits/main/) für mehr Details
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Lizenz
 
-Dieses Projekt ist lizenziert unter der "Educational Community License, Version 2.0" - siehe [LICENSE.md](LICENSE.md) für mehr Deteils
+Dieses Projekt ist lizenziert unter der "Educational Community License, Version 2.0" - siehe [LICENSE.md](LICENSE.md) für mehr Details
 
 [![Educational Community License, Version 2.0][ECL_V2]][ECL_V2-url]
 
