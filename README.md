@@ -87,6 +87,7 @@ This project is licensed under the Educational Community License, Version 2.0 - 
 
 Inspiration, code snippets, etc.
 * [awesome-readme](https://github.com/matiassingers/awesome-readme)
+* [Python.gitignore](https://github.com/github/gitignore/blob/main/Python.gitignore)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
