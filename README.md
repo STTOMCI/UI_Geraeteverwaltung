@@ -32,7 +32,9 @@ Das Endgültige Programm soll folgende Umstände berücksichtigen:
 
 #### Wichtigste Bibliotheken
 
-&emsp;[![Streamlit][Streamlit]][Streamlit-url]
+&emsp;[![Streamlit][Streamlit]][Streamlit-url]  
+&emsp;[![NumPy][NumPy]][NumPy-url]  
+&emsp;[![pandas][pandas]][pandas-url]
 
 *(für genauere Informationen siehe* [requirements.txt](requirements.txt) *)*
 
@@ -114,6 +116,12 @@ Inspiration, code snippets, etc.
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [Python]: https://img.shields.io/badge/python_3.12.0-FFD43B?style=for-the-badge&logo=python&logoColor=306998
 [Python-url]: https://www.python.org
+[Streamlit]: https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=FFFFFF
+[Streamlit-url]: https://streamlit.io
+[NumPy]: https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=FFFFFF
+[NumPy-url]: https://numpy.org
+[pandas]: https://img.shields.io/badge/pandas-150458?style=for-the-badge&logo=pandas&logoColor=FFFFFF
+[pandas-url]: https://pandas.pydata.org
 [Windows_10]: https://img.shields.io/badge/Windows%2010-357EC7?style=for-the-badge&logo=windows10
 [Windows_10-url]: https://www.microsoft.com/de-de/software-download/windows10%20
 [Windows_11]: https://img.shields.io/badge/Windows%2011-357EC7?style=for-the-badge&logo=windows11
@@ -122,5 +130,3 @@ Inspiration, code snippets, etc.
 [VS_Code-url]: https://code.visualstudio.com
 [ECL_V2]: https://img.shields.io/badge/Educational%20Community%20License,%20Version%202.0-414042?style=for-the-badge&logo=opensourceinitiative&logoColor=3DA639
 [ECL_V2-url]: https://opensource.org/license/ecl-2-0/
-[Streamlit]: https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=FFFFFF
-[Streamlit-url]: https://streamlit.io
