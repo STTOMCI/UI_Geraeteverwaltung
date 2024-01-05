@@ -42,7 +42,7 @@ Das Endgültige Programm soll folgende Umstände berücksichtigen:
 
 ### Initialisierung
 
-Da es sich bei diesem Programm nur um ein Mockup handelt, die Entsprechende Programmierumgebung erst herunterlgeladen werden.
+Da es sich bei diesem Programm nur um ein Mockup handelt, muss die Entsprechende Programmierumgebung erst herunterlgeladen werden.
 * Herunterladen und Instalieren von [Python 3.12.0](https://www.python.org/downloads/windows/)
 * Herunterladen und Instalieren von [Visual Studio Code](https://code.visualstudio.com)
 * Herunterladen der aktuellen Version des Projekts von [GitHub](https://github.com/STTOMCI/UI_Geraeteverwaltung)
