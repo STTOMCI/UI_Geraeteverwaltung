@@ -1,9 +1,12 @@
+<a name="readme-top"></a>
 # Mockup der UI der Geräteverwaltung
 
 Dieses Projekt stellt ein Mockup für eine Sotware zur Geräteverwaltung an einer Hochschule da.
 
 Mit dieser Software sollen Geräte wie z.B. (z.B. Laser-Cutter, 3D-Drucker, etc.) verwaltet werden können.
 Zu dieser Verwaltung gehören unter anderm Funktionen wie die Wartungsplanung und die Reservierung von Geráten für Forschungsprojekte.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Beschreibung
 
@@ -17,6 +20,8 @@ Das Endgültige Programm soll folgende Umstände berücksichtigen:
 * Es kann für jedes Gerät eine Warteschlange angelegt werden, in der zukünftige Reservierungsbedarfe eingetragen werden können. Es gilt first-come-first-serve
 * Die Kosten für die Wartung der Geräte werden pro Quartal abgerechnet
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## Erste Schritte
 
 ### Abhängigkeiten
@@ -27,7 +32,7 @@ Das Endgültige Programm soll folgende Umstände berücksichtigen:
 
 #### Wichtigste Bibliotheken
 
-&emsp;n/a
+&emsp;[![Streamlit][Streamlit]][Streamlit-url]
 
 *(für genauere Informationen siehe* [requirements.txt](requirements.txt) *)*
 
@@ -40,6 +45,8 @@ Das Endgültige Programm soll folgende Umstände berücksichtigen:
 
 &emsp;[![Visual Studio Code][VS_Code]][VS_Code-url]
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ### Initialisierung
 
 Da es sich bei diesem Programm nur um ein Mockup handelt, muss die Entsprechende Programmierumgebung erst herunterlgeladen werden.
@@ -47,6 +54,7 @@ Da es sich bei diesem Programm nur um ein Mockup handelt, muss die Entsprechende
 * Herunterladen und Instalieren von [Visual Studio Code](https://code.visualstudio.com)
 * Herunterladen der aktuellen Version des Projekts von [GitHub](https://github.com/STTOMCI/UI_Geraeteverwaltung)
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Programm Ausführen
 
@@ -59,10 +67,14 @@ Da es sich bei diesem Programm nur um ein Mockup handelt, muss der Sourcecode no
 ```pip install -r requirements.txt```
 * Compelieren und ausführen des Sourc-Codes mit Visual Studio Code
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ### Programm Schließen
 
 * Nach dem Ausführen kann die virtuelle Pythen-Umgebung beendet werden mit    
 ```deactivate ```
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Authors
 
@@ -71,11 +83,15 @@ Contributors names and contact info
 * Tobias Stummer    
 &emsp;Email: <t.stummer@mci4me.at>
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## Version History
 
 * 0.1
     * Setup
     * See [commit change]() or See [release history]()
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## License
 
@@ -83,11 +99,16 @@ This project is licensed under the Educational Community License, Version 2.0 - 
 
 [![Educational Community License, Version 2.0][ECL_V2]][ECL_V2-url]
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## Acknowledgments
 
 Inspiration, code snippets, etc.
-* [awesome-readme](https://github.com/matiassingers/awesome-readme)
+* [A simple README.md template](https://gist.github.com/DomPizzie/7a5ff55ffa9081f2de27c315f5018afc)
+* [Best-README-Template](https://github.com/othneildrew/Best-README-Template)
 * [Python.gitignore](https://github.com/github/gitignore/blob/main/Python.gitignore)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
@@ -101,3 +122,5 @@ Inspiration, code snippets, etc.
 [VS_Code-url]: https://code.visualstudio.com
 [ECL_V2]: https://img.shields.io/badge/Educational%20Community%20License,%20Version%202.0-414042?style=for-the-badge&logo=opensourceinitiative&logoColor=3DA639
 [ECL_V2-url]: https://opensource.org/license/ecl-2-0/
+[Streamlit]: https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=FFFFFF
+[Streamlit-url]: https://streamlit.io
