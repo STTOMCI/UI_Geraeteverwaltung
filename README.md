@@ -79,7 +79,9 @@ Contributors names and contact info
 
 ## License
 
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
+&emsp;[![Educational Community License, Version 2.0][ECL_V2]][ECL_V2-url]
+
+This project is licensed under the Educational Community License, Version 2.0 - see the LICENSE.md file for details
 
 ## Acknowledgments
 
@@ -96,3 +98,5 @@ Inspiration, code snippets, etc.
 [Windows_11-url]: https://www.microsoft.com/de-de/software-download/windows11
 [VS_Code]: https://img.shields.io/badge/Visual%20Studio%20Code-444444?style=for-the-badge&logo=visualstudiocode&logoColor=007ACC
 [VS_Code-url]: https://code.visualstudio.com
+[ECL_V2]: https://img.shields.io/badge/Educational%20Community%20License,%20Version%202.0-000000?style=for-the-badge&logo=opensourceinitiative&logoColor=#3DA639
+[ECL_V2-url]: https://opensource.org/license/ecl-2-0/
