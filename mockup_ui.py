@@ -201,7 +201,7 @@ if selected == "Geräte verwalten":
                 st.number_input("Kosten pro Wartung:", min_value=0, format="%i", step=1, key="maintenancecost")
                 st.radio("Resavierbarkeit:", ["Resavierbar", "Nicht resavierbar"], horizontal=True, key="resavable")
             with st.expander("Kommentar"):
-                comment = st.text_area("", placeholder="Kommentar hier einfügen ...")
+                comment = st.text_area("Kommentarfeld", placeholder="Kommentar hier einfügen ...", label_visibility="collapsed")
 
             "---"
 
@@ -209,15 +209,26 @@ if selected == "Geräte verwalten":
             if submitted:
                 st.success("Neues Gerät erfolgreich anlegen!")
 
-    # --- MANAGE DEVICE ---
-                
+    # --- MANAGE DEVICE ---               
     if manage_selected == "Geräte bearbeiten":
-            st.header(f"Geräte bearbeiten")
+        st.header(f"Geräte bearbeiten")
+        with st.form("entry_form", clear_on_submit=True):
             current_device_example = st.selectbox(
                 'Gerät auswählen',
                 options = ["Gerät_A", "Gerät_B"], key="sbDevice_example")
-
+            submitted = st.form_submit_button("Gerät bearbeiten")
+            
     # --- REMOVE DEVICES ---
+    if manage_selected == "Geräte entfernen":
+        st.header(f"Geräte entfernen")
+        with st.form("entry_form", clear_on_submit=True):
+            device = st.selectbox(
+                'Gerät auswählen',
+                options = ["Gerät_A", "Gerät_B"], key="sbDevice_example")
+            submitted = st.form_submit_button("Gerät löschen")
+            if submitted:
+                st.success("Gerät erfolgreich gelöscht!")
+
 
 # --- RESERVE DEVICES ---
             
