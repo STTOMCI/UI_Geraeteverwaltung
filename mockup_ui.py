@@ -234,19 +234,16 @@ if selected == "Geräte anzeigen":
     # --- SHOW DEVICE ---
     if show_selected == "Geräte Anzeigen":
         st.header(f"Geräteanzeige")
-        current_device = st.selectbox(
-                'Gerät auswählen',
-                options = ["Gerät_A", "Gerät_B"], key="sbDevice_example")
+        current_device = st.selectbox('Gerät auswählen', options = ["Gerät_A", "Gerät_B"], key="sbDevice_example")
         calendar_options = {
             **calendar_options,
             "headerToolbar": {
                 "left": "today prev,next",
                 "center": "title",
-                "right": "resourceTimelineDay,resourceTimelineWeek,resourceTimelineMonth",
+                "right": "timelineDay,timelineWeek,timelineMonth",
             },
             "initialDate": "2023-07-01",
-            "initialView": "resourceTimelineDay",
-            "resourceGroupField": "building",
+            "initialView": "timelineMonth",
         }
 
     # --- SHOW MAINTENANCE ---
@@ -257,10 +254,10 @@ if selected == "Geräte anzeigen":
             "headerToolbar": {
                 "left": "today prev,next",
                 "center": "title",
-                "right": "timelineDay,timelineWeek,timelineMonth",
+                "right": "dayGridDay,dayGridWeek,dayGridMonth",
             },
             "initialDate": "2023-07-01",
-            "initialView": "timelineMonth",
+            "initialView": "dayGridMonth",
         }
 
     state = calendar(
