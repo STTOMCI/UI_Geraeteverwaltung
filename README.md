@@ -60,20 +60,22 @@ Da es sich bei diesem Programm nur um ein Mockup handelt, muss die Entsprechende
 
 ### Programm Ausführen
 
-Da es sich bei diesem Programm nur um ein Mockup handelt, muss der Sourcecode noch Compiled werden.
 * Einrichten einer Virtuellen Pythen-Umgebung in VS Code mit  
 ```python -m venv .venv```
 * Aktivieren der Virtuellen Pythen-Umgebung mit  
 ```.venv\Scripts\activate```
 * Instalieren aller benötigten Biblioteken mit  
 ```pip install -r requirements.txt```
-* Compelieren und ausführen des Sourc-Codes mit Visual Studio Code
+* Ausführen des Programms mit  
+```streamlit run .\mockup_ui.py```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Programm Schließen
 
-* Nach dem Ausführen kann die virtuelle Pythen-Umgebung beendet werden mit    
+* Beenden des Programs durch folgende Tastenkombination    
+```Strg + C ``` bzw. ```Ctrl + C ```
+* Beenden der virtuelle Pythen-Umgebung mit    
 ```deactivate ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
