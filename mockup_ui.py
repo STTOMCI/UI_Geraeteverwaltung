@@ -8,6 +8,14 @@ page_title = "Geräteverwaltung"
 page_icon = ":books:"  # emojis: https://www.webfx.com/tools/emoji-cheat-sheet/
 layout = "centered"
 
+calendar_resources = [
+    {"id": "a", "building": "Building A", "title": "Room A"},
+    {"id": "b", "building": "Building A", "title": "Room B"},
+    {"id": "c", "building": "Building B", "title": "Room C"},
+    {"id": "d", "building": "Building B", "title": "Room D"},
+    {"id": "e", "building": "Building C", "title": "Room E"},
+    {"id": "f", "building": "Building C", "title": "Room F"},
+]
 events = [
     {
         "title": "Event 1",
@@ -129,14 +137,6 @@ events = [
         "resourceId": "e",
     },
 ]
-calendar_resources = [
-    {"id": "a", "building": "Building A", "title": "Room A"},
-    {"id": "b", "building": "Building A", "title": "Room B"},
-    {"id": "c", "building": "Building B", "title": "Room C"},
-    {"id": "d", "building": "Building B", "title": "Room D"},
-    {"id": "e", "building": "Building C", "title": "Room E"},
-    {"id": "f", "building": "Building C", "title": "Room F"},
-]
 calendar_options = {
     "editable": "true",
     "navLinks": "true",
@@ -234,16 +234,16 @@ if selected == "Geräte anzeigen":
     # --- SHOW DEVICE ---
     if show_selected == "Geräte Anzeigen":
         st.header(f"Geräteanzeige")
-        current_device = st.selectbox('Gerät auswählen', options = ["Gerät_A", "Gerät_B"], key="sbDevice_example")
         calendar_options = {
             **calendar_options,
             "headerToolbar": {
                 "left": "today prev,next",
                 "center": "title",
-                "right": "timelineDay,timelineWeek,timelineMonth",
+                "right": "resourceTimelineDay,resourceTimelineWeek,resourceTimelineMonth",
             },
             "initialDate": "2023-07-01",
-            "initialView": "timelineMonth",
+            "initialView": "resourceTimelineMonth",
+            "resourceGroupField": "building",
         }
 
     # --- SHOW MAINTENANCE ---
@@ -260,8 +260,8 @@ if selected == "Geräte anzeigen":
             "initialView": "dayGridMonth",
         }
 
-    state = calendar(
-        events=st.session_state.get("events", events),
+    calendar(
+        events=events,
         options=calendar_options,
         custom_css="""
         .fc-event-past {
@@ -279,6 +279,3 @@ if selected == "Geräte anzeigen":
         """,
         key=show_selected,
     )
-
-    if state.get("eventsSet") is not None:
-        st.session_state["events"] = state["eventsSet"]
