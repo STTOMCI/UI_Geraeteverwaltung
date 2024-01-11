@@ -47,21 +47,37 @@ if selected == "Geräte verwalten":
             col1.selectbox("MCI:", list(map(roman.toRoman,range(1,7))), key="mci")
             tool_types = ["Office", "EDV", "Labore", "Diverses"]
             col2.selectbox("Geräte Art:", tool_types, key="type")
+            st.text_input("Gerätename:", max_chars=64, placeholder="Gerätename hier einfügen ...", key="name")
 
             "---"
+
             with st.expander("Geräteeigenschaften"):
-                st.number_input("Preis", min_value=0, format="%i", step=10, key="cost")
+                st.number_input("Preis:", min_value=0, format="%i", step=10, key="cost")
+                st.selectbox("Verantwortlicher:", ["Person A", "Person B"], key="person")
+                st.radio("Beweglichkeit:", ["Feststehend", "Beweglich"], horizontal=True, key="mobility")
             with st.expander("Wartung und Reservierung"):
-                st.number_input("Preis", min_value=0, format="%i", step=10, key="cost2")
+                st.radio(
+                    "Wartungsabstände:",
+                    options=["keine Wartung notwendig", "täglich", "wöchentlich", "monatlich", "jährlich"],
+                    key="intervals")
+                st.number_input("Kosten pro Wartung:", min_value=0, format="%i", step=1, key="maintenancecost")
+                st.radio("Resavierbarkeit:", ["Resavierbar", "Nicht resavierbar"], horizontal=True, key="resavable")
             with st.expander("Kommentar"):
                 comment = st.text_area("", placeholder="Kommentar hier einfügen ...")
 
             "---"
+
             submitted = st.form_submit_button("Neues Gerät anlegen")
             if submitted:
                 st.success("Neues Gerät erfolgreich anlegen!")
 
     # --- MANAGE DEVICE ---
-            
+                
+    if manage_selected == "Geräte bearbeiten":
+            st.header(f"Geräte bearbeiten")
+            current_device_example = st.selectbox(
+                'Gerät auswählen',
+                options = ["Gerät_A", "Gerät_B"], key="sbDevice_example")
+
     # --- REMOVE DEVICES ---
 
